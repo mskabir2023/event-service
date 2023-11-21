@@ -14,9 +14,6 @@ import jakarta.validation.constraints.NotNull;
 @Data
 public class EventDto implements Serializable {
     Long id;
-    Long version;
-    Date createdDate;
-    Date lastModifiedDate;
 
     @NotNull
     @NotEmpty
