@@ -4,6 +4,7 @@ import lombok.Data;
 import com.example.event.common.enums.EventType;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 import jakarta.validation.constraints.NotBlank;
@@ -16,6 +17,7 @@ public class EventDto implements Serializable {
     Long version;
     Date createdDate;
     Date lastModifiedDate;
+
     @NotNull
     @NotEmpty
     @NotBlank
@@ -29,7 +31,7 @@ public class EventDto implements Serializable {
     @NotBlank
     String location;
     @NotNull
-    Date staringDate;
+    LocalDate staringDate;
     @NotNull
     LocalDateTime endingDate;
 }
